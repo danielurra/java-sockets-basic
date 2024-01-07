@@ -1,5 +1,7 @@
 # Java Sockets basic
 Simple client-server echo using TCP and Java sockets
+## Two computers
+Even though both parts of the code will run 
 ## Server computer listen for connection on TCP port 8889
 Immediately after executing the server code you can check by utisng the following command.<br>
 You'll see now a new TCP port whose status is **Listening**:<br>
