@@ -20,7 +20,7 @@ netstat -aon | findstr /i 8889
 <img width="574" alt="cmd-tcp-listening-ports-command" src="https://github.com/danielurra/java-sockets-basic/assets/51704179/a4afe16a-c567-462b-9459-e6518fa6cfd0"><br>
 ## Server code
 ```java
-package Examples;
+package Package_server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
