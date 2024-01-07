@@ -2,9 +2,9 @@
 Simple client-server echo using TCP and Java sockets
 ## Two computers
 Even though both parts of the code will run on the same computer, for better understanding I always prefer having two computers.<br>
-One computer will play de **Server** role, running the server code and the other computer will play the **Client** role<br>
-by running the client code.
-In case you prefer the opposite then change the IP address in the client code by `Localhost`.
+One computer will play de **Server** role (by running the server code) and the other computer will play the **Client** role<br>
+(by running the client code).
+In case you prefer the opposite then simple change the IP address in the client code by `Localhost`.
 ## Server computer listen for connection on TCP port 8889
 Immediately after executing the server code you can check by utisng the following command.<br>
 You'll see now a new TCP port whose status is **Listening**:<br>
@@ -51,5 +51,53 @@ public class SimpleServer {
 	}
 }
 ```
+## Client code
+```java
+package Examples;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class SimpleClient {
+	public static void main(String[] args) throws Exception {
+		try {
+			// Create connection to server socket
+			Socket socket = new Socket("192.168.1.166", 8889);
+
+			// Create streams to read/write data
+			DataInputStream inStream = new DataInputStream(socket.getInputStream());
+			DataOutputStream outStream = new DataOutputStream(socket.getOutputStream());
+
+			Scanner scanner = new Scanner(System.in);
+			String clientMessage = "";
+			String serverMessage = "";
+
+				// Prompt user to enter some number or 'end'
+				System.out.println("Type a word: ");
+				clientMessage = scanner.nextLine();
+
+				// Send the entered number to server
+				outStream.writeUTF(clientMessage);
+				outStream.flush();
+
+				// Read data from socket input stream
+				serverMessage = inStream.readUTF();
+				System.out.println(serverMessage);
+
+			// Close resources
+			outStream.close();
+			outStream.close();
+			socket.close();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+```
+
 
 
