@@ -1,7 +1,10 @@
 # Java Sockets basic
 Simple client-server echo using TCP and Java sockets
 ## Two computers
-Even though both parts of the code will run 
+Even though both parts of the code will run on the same computer, for better understanding I always prefer having two computer.<br>
+On computer will play de **Server** role, running the server code and the other computer will play the **Client** role<br>
+by running the client code.
+In case you prefer the opposite then change the IP address in the client code by `Localhost`.
 ## Server computer listen for connection on TCP port 8889
 Immediately after executing the server code you can check by utisng the following command.<br>
 You'll see now a new TCP port whose status is **Listening**:<br>
