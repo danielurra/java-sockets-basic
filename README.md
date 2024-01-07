@@ -38,7 +38,7 @@ public class SimpleServer {
 			// once that happens it returns a "Socket" object
 			Socket serverClientSocket = server.accept();
 
-			System.out.println("Server started...");
+			System.out.println("Connection established...");
 			
 			DataInputStream inStream = new DataInputStream(serverClientSocket.getInputStream());
 			DataOutputStream outStream = new DataOutputStream(serverClientSocket.getOutputStream());
