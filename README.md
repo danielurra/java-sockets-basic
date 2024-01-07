@@ -1,7 +1,7 @@
 # Java Sockets basic
 This is a simple `client-server` echo using TCP and **Java sockets**, the first thing to do here is to start the server on one computer.<br>
 The server will start listening for connections coming from the network on one particular TCP port, in our case **port 8889**.<br>
-You can verify the listening port by running netstat cmd command in windows computers, see below section.<br>
+You can verify the listening port by running `netstat` cmd command in windows computers, see below section.<br>
 On another computer in the same network you will run the client code, you will see the console asking to enter a word.<br>
 If everything is ok as soon as you write a word the server will echo the word you typed, see image below:<br>
 ![java-sockets](https://github.com/danielurra/java-sockets-basic/assets/51704179/b6845891-e43e-49ac-9e64-4b05b02270a5)
