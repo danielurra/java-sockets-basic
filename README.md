@@ -6,7 +6,7 @@ On another computer in the same network you will run the client code, you will s
 If everything is ok as soon as you write a word the server will echo the word you typed, see image below:<br>
 ![java-sockets](https://github.com/danielurra/java-sockets-basic/assets/51704179/b6845891-e43e-49ac-9e64-4b05b02270a5)
 ## Two computers
-Even though both parts of the code will run on the same computer, for better understanding I always prefer having two computers.<br>
+Even though both parts of the code (client/server) will perfectly work on the same computer, for better understanding I always prefer having two computers.<br>
 One computer will play de **Server** role (by running the server code) and the other computer will play the **Client** role<br>
 (by running the client code).
 In case you prefer the opposite then simple change the IP address in the client code by `Localhost`.<br>
