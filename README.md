@@ -12,7 +12,7 @@ One computer will play de **Server** role (by running the server code) and the o
 (by running the client code).
 In case you prefer the opposite then simple change the **IP address** (192.168.1.166) in the client code by `Localhost`.<br>
 ![client-server](https://github.com/danielurra/java-sockets-basic/assets/51704179/58eb45d5-7a2c-4dee-a4d6-e0bc23fe7b3c)<br>
-## Server computer listen for connection on TCP port 8889
+## Server computer listening for connection on TCP port 8889
 Immediately after executing the server code you can check if it is actually running by utilizing the following command.<br>
 You'll see now a new TCP port (8889) whose status is **Listening**:<br>
 ```cmd
