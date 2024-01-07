@@ -1,5 +1,9 @@
 # Java Sockets basic
-Simple client-server echo using TCP and Java sockets
+Simple client-server echo using TCP and Java sockets, the first thing to do here is to start the server on one computer.<br>
+The server will start listening for connections coming from the network on one particular TCP port, in our case port 8889.<br>
+You can verify the listening port by running netstat cmd command in windows computers, see below section.<br>
+On another computer in the same network you will run the client code, you will see the console asking to enter a word.<br>
+If everything is ok as soon as you write a word the server will echo the word you typed, see image below:<br>
 ## Two computers
 Even though both parts of the code will run on the same computer, for better understanding I always prefer having two computers.<br>
 One computer will play de **Server** role (by running the server code) and the other computer will play the **Client** role<br>
