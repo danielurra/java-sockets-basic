@@ -1,7 +1,7 @@
 # Java Sockets basic
 Simple client-server echo using TCP and Java sockets
 ## Two computers
-Even though both parts of the code will run on the same computer, for better understanding I always prefer having two computer.<br>
+Even though both parts of the code will run on the same computer, for better understanding I always prefer having two computers.<br>
 On computer will play de **Server** role, running the server code and the other computer will play the **Client** role<br>
 by running the client code.
 In case you prefer the opposite then change the IP address in the client code by `Localhost`.
