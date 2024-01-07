@@ -7,5 +7,44 @@ You'll see now a new TCP port whose status is **Listening**:<br>
 netstat -aon | findstr /i 8889
 ```
 <img width="574" alt="cmd-tcp-listening-ports-command" src="https://github.com/danielurra/java-sockets-basic/assets/51704179/a4afe16a-c567-462b-9459-e6518fa6cfd0"><br>
+## Server code
+```java
+package Examples;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class SimpleServer {
+	public static void main(String[] args) throws Exception {
+		try {
+
+			// Listen to port
+			// create an object of ServerSocket 
+			ServerSocket server = new ServerSocket(8889);
+			// call the accept method of that object -- wait for a client to try to establish a connection
+			// once that happens it returns a "Socket" object
+			Socket serverClientSocket = server.accept();
+
+			System.out.println("Server started...");
+			
+			DataInputStream inStream = new DataInputStream(serverClientSocket.getInputStream());
+			DataOutputStream outStream = new DataOutputStream(serverClientSocket.getOutputStream());
+
+			outStream.writeUTF("Echo of what was received: " + inStream.readUTF());
+			outStream.flush();
+			
+			// close and release resources
+			inStream.close();
+			outStream.close();
+			serverClientSocket.close();
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+```
 
 
