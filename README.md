@@ -9,7 +9,7 @@ If everything is ok as soon as you write a word the server will echo the word yo
 Even though both parts of the code (client/server) will perfectly work on the same computer, for better understanding I always prefer having two computers.<br>
 One computer will play de **Server** role (by running the server code) and the other computer will play the **Client** role<br>
 (by running the client code).
-In case you prefer the opposite then simple change the IP address in the client code by `Localhost`.<br>
+In case you prefer the opposite then simple change the **IP address** (192.168.1.166)in the client code by `Localhost`.<br>
 ![client-server](https://github.com/danielurra/java-sockets-basic/assets/51704179/58eb45d5-7a2c-4dee-a4d6-e0bc23fe7b3c)<br>
 ## Server computer listen for connection on TCP port 8889
 Immediately after executing the server code you can check it is actually running by utilizing the following command.<br>
