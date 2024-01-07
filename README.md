@@ -1,6 +1,6 @@
 # Java ServerSocket basic - Echo
-This is a simple `client-server` application where the server returns an `echo` of the text that is typed on the client side console.<br>
-The code makes use of the Java **ServerSocket** object, the first thing to do here is to start the server on one computer.<br>
+This is a simple `client-server` console application where the server returns an `echo` of the text that is typed on the client side.<br>
+The code makes use of the Java **ServerSocket** and **Stream**, the first thing to do here is to start the server on one computer.<br>
 The server will start listening for connections coming from the network on one particular TCP port, in our case **port 8889**.<br>
 You can verify the listening port by running `netstat` cmd command in windows computers, see below section.<br>
 On another computer in the same network you will run the client code, you will see the console asking to enter a word.<br>
