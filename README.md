@@ -41,7 +41,7 @@ public class ServerClass {
 
 			// create an object of ServerSocket and start listening for connections in port 8889
 			ServerSocket server = new ServerSocket(8889);
-			// call the accept method of that object -- wait for a client to try to establish a connection
+			// call the accept method of that object -- wait for a client to establish a connection
 			Socket serverClientSocket = server.accept();
 			// once that happens it returns a "Socket" object
 
