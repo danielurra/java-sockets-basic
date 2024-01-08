@@ -74,7 +74,7 @@ import java.util.Scanner;
 public class ClientClass {
 	public static void main(String[] args) throws Exception {
 		try {
-			// Create connection to server socket
+			// Create server socket (IP and port)
 			Socket socket = new Socket("192.168.1.166", 8889);
 
 			// Create streams to read/write data
