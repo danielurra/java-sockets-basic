@@ -20,6 +20,7 @@ In case you prefer the opposite then simple change the **IP address** (192.168.1
 ## Server listening for connection on TCP port 8889
 Immediately after executing the server code you can check if it is actually running by utilizing the following command.<br>
 You'll see now a new TCP port (8889) whose status is **Listening**:<br>
+
 ![netstat-cmd-command](https://github.com/danielurra/java-sockets-basic/assets/51704179/1042c74f-1ac0-4171-98c5-e798b73f5d57)<br>
 ```cmd
 netstat -aon | findstr /i 8889
