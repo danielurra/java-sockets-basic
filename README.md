@@ -33,7 +33,7 @@ import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class SimpleServer {
+public class ServerClass {
 	public static void main(String[] args) throws Exception {
 		try {
 
@@ -65,14 +65,14 @@ public class SimpleServer {
 ```
 ## Client code
 ```java
-package Examples;
+package Package_client;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class SimpleClient {
+public class ClientClass {
 	public static void main(String[] args) throws Exception {
 		try {
 			// Create connection to server socket
