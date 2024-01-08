@@ -6,6 +6,7 @@ The server will start listening for connections coming from the network on one p
 You can verify the listening port by running the `netstat` cmd command in windows computers, see below section.<br>
 * On another computer, one that is reachable via the network you will run the client code, you will see the console asking to enter a word.<br>
 If everything is ok as soon as you write a word the server will echo the word you typed, see animation below:<br>
+## Animation
 ![java-sockets](https://github.com/danielurra/java-sockets-basic/assets/51704179/b6845891-e43e-49ac-9e64-4b05b02270a5)
 ## Two computers
 Even though both parts of the code (client/server) will perfectly work on the same computer, for better understanding I always prefer having two computers.<br>
