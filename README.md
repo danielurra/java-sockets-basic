@@ -1,4 +1,4 @@
-# Java ServerSocket and Stream
+# Java Sockets and Streams
 ![java-sockets-and-streams](https://github.com/danielurra/java-sockets-basic/assets/51704179/0a35e2c3-2ec2-49c6-aa54-ba28d2b4d38a)<br>
 ## Basic Echo console Application
 This is a simple `client-server` console application where the server returns an `echo` of the text that is typed on the client side.<br>
