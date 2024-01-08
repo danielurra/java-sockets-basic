@@ -87,7 +87,7 @@ public class ClientClass {
 			String clientMessage = "";
 			String serverMessage = "";
 
-				// Prompt user to enter some number or 'end'
+				// Ask user to type a word
 				System.out.println("Type a word: ");
 				clientMessage = scanner.nextLine();
 
