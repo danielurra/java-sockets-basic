@@ -91,7 +91,7 @@ public class ClientClass {
 				System.out.println("Type a word: ");
 				clientMessage = scanner.nextLine();
 
-				// Send the entered number to server
+				// Send the entered text to the server
 				outStream.writeUTF(clientMessage);
 				outStream.flush();
 
