@@ -1,4 +1,6 @@
-# Java ServerSocket basic - Echo
+# Java ServerSocket and Stream
+![java-serversocket-streams](https://github.com/danielurra/java-sockets-basic/assets/51704179/1bf12761-e913-4acc-bc6b-9ad1a8a195f4)<br>
+## Basic Echo console Application
 This is a simple `client-server` console application where the server returns an `echo` of the text that is typed on the client side.<br>
 The code makes use of the Java **ServerSocket** and also Java **Stream**.
 * The first thing to do here is to start the server on one computer.<br>
