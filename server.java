@@ -1,21 +1,19 @@
-package java_sockets_basics_server_side;
+package Package_server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class server {
-
+public class ServerClass {
 	public static void main(String[] args) throws Exception {
 		try {
 
-			// Listen to port
-			// create an object of ServerSocket 
+			// create an object of ServerSocket and start listening for connections in port 8889
 			ServerSocket server = new ServerSocket(8889);
-			// call the _accept_ method of that object -- wait for a client to try to establish a connection
-			// once that happens it returns a "Socket" object
+			// call the accept method of that object -- wait for a client to establish a connection
 			Socket serverClientSocket = server.accept();
+			// once that happens it returns a "Socket" object
 
 			System.out.println("Connection established...");
 			
