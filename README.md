@@ -5,7 +5,8 @@ This is a simple `client-server` console application where the server returns an
 The code makes use of the Java **ServerSocket** and also Java **Stream**.
 * The first thing to do here is to start the server on one computer.<br>
 The server will start listening for connections coming from the network on one particular TCP port, in our case **port 8889**.<br>
-You can verify the listening port by running the `netstat` cmd command in windows computers, see below section.<br>
+You can verify the listening port by running the `netstat` cmd command in windows computers. You can choose the port number of your preference<br>
+just be dure it is not being used by another app, in that case you will get a runtime exception.<br>
 * On another computer, one that is reachable via the network you will run the client code, you will see the console asking to enter a word.<br>
 If everything is ok as soon as you write a word the server will echo the word you typed, see animation below:<br>
 ## Animation
