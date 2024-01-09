@@ -10,7 +10,7 @@ You can verify the listening port by running the `netstat` cmd command in window
 If everything is ok as soon as you write a word the server will echo the word you typed, see animation below:<br>
 ## Animation
 In the animation below you will see both sides (client and server) code, the IDE used is Eclipse and both computers have Windows Operating System.<br>
-![java-sockets](https://github.com/danielurra/java-sockets-basic/assets/51704179/b6845891-e43e-49ac-9e64-4b05b02270a5)
+![java-sockets-and-streams-animation-v2](https://github.com/danielurra/java-sockets-basic/assets/51704179/7bcf1a96-3b8a-4d73-9214-940780ff80bc)
 ## Two computers
 Even though both parts of the code (client/server) will perfectly work on the same computer, for better understanding I always prefer having two computers.<br>
 One computer will play de **Server** role (by running the server code) and the other computer will play the **Client** role<br>
